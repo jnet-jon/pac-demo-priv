@@ -16,7 +16,7 @@ resource "aws_vpc" "demo" {
 }
 
 # Web tier for the new customer portal
-resource "aws_security_group" "web" {
+resource "aws_security_group" "web01" {
   name        = "web-tier"
   description = "Web tier security group"
   vpc_id      = aws_vpc.demo.id
