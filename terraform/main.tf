@@ -28,7 +28,7 @@ resource "aws_security_group" "web01" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
-/*
+
   ingress {
     description = "SSH for admins"
     from_port   = 22
@@ -36,7 +36,7 @@ resource "aws_security_group" "web01" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
- */
+ 
 
   egress {
     description = "Outbound to VPC"
